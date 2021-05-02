@@ -22,6 +22,7 @@ body {
 }
 
 #nav {
+    position: relative;
     height: 100%;
     color: rgba(255, 255, 255, 0.849);
     background-color:rgb(109, 109, 109);
@@ -54,16 +55,16 @@ body {
 }
 
 #menu_button {
-    transition: background-color 1s;
+    cursor: pointer;
 }
 
 #navigation {
     display: none;
     position: absolute;
     right: 5%;
-    top: 15%;
-    width: 40%;
-    height: 25%;
+    top: 100%;
+    width: 140px;
+    height: 170px;
     background-color: rgb(65, 65, 65);
 }
 
@@ -73,6 +74,7 @@ body {
 
 #navigation ul li {
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 #main {
