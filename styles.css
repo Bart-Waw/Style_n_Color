@@ -4,7 +4,15 @@ html {
     font-family: sans-serif;
 }
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black
+}
+
 #content {
+    max-width: 600px;
     height: 97vh;
     width: 100%;
     background-color:rgb(65, 65, 65);
@@ -75,9 +83,8 @@ html {
 }
 
 .arrow_button {
-    position: absolute;
-    left: 40%;
-    bottom: 6%;
+    position: relative;
+    bottom: 20px;
     background-color: rgb(219, 47, 47);
     color: rgba(255, 255, 255, 0.849);
     height: 55px;
@@ -88,6 +95,12 @@ html {
     align-items: center;
     justify-content: center;
     font-size: 3.5em;
+}
+
+.page_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -134,11 +147,14 @@ html {
 
 #page_2_main {
     background-color: rgb(230, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
 }
 
 #page_2_main_inner {
-    margin: 2%;
-    height: 96%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.932);
     box-shadow: 0px 0px 1px 2px rgb(212, 212, 212);
     display: flex;
@@ -196,7 +212,6 @@ html {
 
 .color-box {
     margin: 5px;
-    width: 95%;
     height: 100%;
     box-shadow: 0px 0px 1px 2px rgb(212, 212, 212);
 }
