@@ -3,6 +3,7 @@ $('#menu_button').on('click', function () {
 });
 
 $('#go-to-page1').on('click', function () {
+    $('#nav-left').html('');
     $('#title').html('Style & Color');
     $('#navigation').slideUp();
     $('#page_2').hide();
@@ -13,6 +14,7 @@ $('#go-to-page1').on('click', function () {
 });
 
 $('#go-to-page2').on('click', function () {
+    $('#nav-left').html('');
     $('#title').html('Style');
     $('#navigation').slideUp();
     $('#page_1').hide();
@@ -23,6 +25,7 @@ $('#go-to-page2').on('click', function () {
 });
 
 $('#go-to-page3').on('click', function () {
+    $('#nav-left').html('<div><</div>');
     $('#title').html('Color');
     $('#navigation').slideUp();
     $('#page_2').hide();
@@ -33,6 +36,7 @@ $('#go-to-page3').on('click', function () {
 });
 
 $('#go-to-page4').on('click', function () {
+    $('#nav-left').html('<div><</div>');
     $('#title').html('Match');
     $('#navigation').slideUp();
     $('#page_2').hide();
@@ -43,6 +47,7 @@ $('#go-to-page4').on('click', function () {
 });
 
 $('#go-to-page5').on('click', function () {
+    $('#nav-left').html('<div class="plus_button" id="save_button"><div>+</div></div>');
     $('#title').html('Saved');
     $('#navigation').slideUp();
     $('#page_2').hide();

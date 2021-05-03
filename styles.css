@@ -32,6 +32,17 @@ body {
     grid-template-rows: 1fr;
 }
 
+#nav-left {
+    font-family: monospace;
+    position: relative;
+    bottom: 3px;
+    color: rgba(255, 255, 255, 0.849);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+}
+
 #title {
     margin: 0px;
     font-size: 1.3em;
@@ -66,6 +77,7 @@ body {
     width: 140px;
     height: 170px;
     background-color: rgb(65, 65, 65);
+    z-index: 99;
 }
 
 #navigation ul {
@@ -85,8 +97,29 @@ body {
 }
 
 .arrow_button {
+    font-family: monospace;
     position: relative;
-    bottom: 20px;
+    bottom: 25px;
+    background-color: rgb(219, 47, 47);
+    color: rgba(255, 255, 255, 0.849);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 2px rgb(0, 0, 0, 19%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+}
+
+.arrow {
+    position: relative;
+    bottom: 5px;
+}
+
+.plus_button {
+    position: relative;
+    bottom: 25px;
     background-color: rgb(219, 47, 47);
     color: rgba(255, 255, 255, 0.849);
     height: 55px;
@@ -97,6 +130,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 3.5em;
+
 }
 
 .page_bottom {
@@ -107,10 +141,6 @@ body {
 
 
 /* PAGE 1 */
-
-#page_1 {
-    display: block;
-}
 
 #match_button {
     background-color: rgb(219, 47, 47);
@@ -165,13 +195,19 @@ body {
 
 #page_2_main_inner div {
     width: 50%;
-    margin: 80px 20px 0px 20px;
-    display: flex;
-    justify-content: center;
+    margin: 80px 20px 20px 20px;
     color: rgba(129, 127, 127, 0.849);
     font-size: 0.7em;
     text-align:justify;
 }
+
+#page_2_main_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 /* PAGE 3 */
@@ -199,7 +235,6 @@ body {
 
 #page_3_main {
     background-color: rgb(230, 228, 228);
-    height: 100%;
     display: flex;
     flex-direction: row;
     padding: 5px;
@@ -258,74 +293,163 @@ body {
 
 
 
-
-
-
-
 /* PAGE 4 */
 
 #page_4 {
     display: none;
+    height: 100%;
+    width: 100%;
 }
 
+#page_4_container {
+    height: 100%;
+}
+
+#page_4_main {
+    height: 100%;
+    display: grid;
+    grid-template-areas: "page_4_top" "page_4_main_inner" "page_4_bottom";
+    grid-template-rows: 7% 83% 10%;
+    grid-template-columns: 1fr;
+}
+
+#page_4_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.849);
+    background-color: rgb(230, 228, 228); 
+    padding: 8px 4px 0px 4px;
+}
+
+#page_4_top div {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 1px 2px rgb(212, 212, 212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+}
+
+#page_4_primary {
+    color: rgba(255, 255, 255, 0.849);
+    background-color: rgb(22, 16, 77);
+}
+
+#page_4_secondary {
+    color: rgba(0, 0, 0, 0.849);
+    background-color: rgb(255, 255, 255);
+}
+
+#page_4_main_inner {
+    background-color: rgb(230, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+#page_4_main_inner div {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.932);
+    box-shadow: 0px 0px 1px 2px rgb(212, 212, 212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* PAGE 5 */
+
 #page_5 {
+    height: 100%;
+    width: 100%;
     display: none;
 }
 
-
-
-
-
-
-
-
-
-/* MISC */
-
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    overflow: hidden;
-    background: #fff;
+#page_5_container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "page_5_main" "page_5_bottom";
+    grid-template-rows: 90% 10%;
+    grid-template-columns: 1fr;
 }
 
-#preloader:before {
-    content: "";
-    position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
-    border: 6px solid #f2f2f2;
-    border-top: 6px solid #56829e ;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    -webkit-animation: animate-preloader 1s linear infinite;
-    animation: animate-preloader 1s linear infinite;
+#save_button {
+    font-size: 1.1em;
+    width: 30px;
+    height: 30px;
+    bottom: -5px;
+    box-shadow: 0px 0px 1px 2px rgb(27 27 27 / 8%);
+    position: relative;
 }
 
-@-webkit-keyframes animate-preloader {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+#save_button div {
+    position: relative;
+    bottom: 3px;
 }
 
-@keyframes animate-preloader {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+#page_5_main {
+    background-color: rgb(230, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: scroll;
+}
 
+.page_5_entry {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    margin: 4px;
+    height: 50px;
+    font-size: 0.5em;
+    box-shadow: 0px 0px 1px 1px rgb(212, 212, 212);
+    padding: 4px;
+    grid-template-areas: "page_5_entry_left" "page_5_entry_center" "page_5_entry_right";
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr;
+}
+
+.page_5_entry_left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_5_entry_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page_5_entry_title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.page_5_entry_text {
+    color: rgba(129, 127, 127, 0.849);
+}
+
+.page_5_entry_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow_down {
+    font-family: monospace;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    transform: rotate(90deg);
 }
