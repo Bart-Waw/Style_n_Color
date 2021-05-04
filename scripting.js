@@ -61,9 +61,9 @@ $('#go-to-page5').on('click', function () {
 
 // TESTING
 $('#page_4_primary').on('click', function () {
-    $('#L1-top').css('background-color', `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`);
+    $('#shirt').css('fill', `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`);
 });
 
 $('#page_4_secondary').on('click', function () {
-    $('#L1-bot').css('background-color', `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`);
+    $('#pants').css('fill', `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`);
 });
