@@ -356,7 +356,8 @@ body {
     padding: 8px;
 }
 
-#page_4_main_inner div {
+
+#mannequin_container {
     height: 100%;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.932);
@@ -365,7 +366,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 
 
 /* PAGE 5 */
@@ -465,31 +465,63 @@ body {
 
 #mannequin_container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+
 }
 
-#L1 {
-    display: block;
-    width: 100%;
+#L2-top {
     height: 100%;
-    z-index: 1;
+    z-index: 2;
+    margin: 0px -1px;
 }
 
-#L2 {
-    display: none;  
+#L2-bot {
+    height: 100%;
+    z-index: 2;
+    margin: -1px -1px 0px -1px;
+}
+
+#L1-top {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 49.9%;
+    z-index: 1;
+    background-color: blue;
+}
+
+#L1-bot {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 49.9%;
+    z-index: 1;
+    background-color: red;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+
+#bot {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+
+.side {
+    background-color: white;
+    width: 100%;
     z-index: 2;
 }
 
-#L3 {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
+.side-bottom {
+    margin-top: -1px;
 }
