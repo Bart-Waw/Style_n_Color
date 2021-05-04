@@ -56,3 +56,14 @@ $('#go-to-page5').on('click', function () {
     $('#page_1').hide();
     $('#page_5').fadeIn();
 });
+
+
+
+// TESTING
+$('#page_4_primary').on('click', function () {
+    $('#L2').toggle();
+});
+
+$('#page_4_secondary').on('click', function () {
+    $('#L3').toggle();
+});
