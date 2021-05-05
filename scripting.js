@@ -60,10 +60,17 @@ $('#go-to-page5').on('click', function () {
 
 
 // TESTING
+/*
 $('#page_4_primary').on('click', function () {
     $('#shirt').css('fill', `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`);
 });
+*/
+
+$('#slider').on('change', function () {
+    $('#shirt').css('fill', `hsl(${$('#slider').val()}, 80%, 50%)`);
+});
+
 
 $('#page_4_secondary').on('click', function () {
-    $('#pants').css('fill', `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`);
+    $('#pants').css('fill', `hsl(${$('#slider').val()}, ${Math.floor(Math.random() * 101)}%, ${Math.floor(Math.random() * 101)}%)`);
 });
