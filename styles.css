@@ -310,6 +310,7 @@ body {
 }
 
 #page_4_main {
+    position: relative;
     height: 100%;
     display: grid;
     grid-template-areas: "page_4_top" "page_4_main_inner" "page_4_bottom";
@@ -360,7 +361,7 @@ body {
 #mannequin_container {
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.932);
+    background-color: rgb(233 233 233);
     box-shadow: 0px 0px 1px 2px rgb(212, 212, 212);
     display: flex;
     justify-content: center;
@@ -469,7 +470,7 @@ body {
 }
 
 #shirt {
-    fill:cyan;
+    fill:rgb(255, 255, 255);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -486,6 +487,150 @@ body {
     height: 100%;
     width: 100%;
     z-index: 2;
+}
+
+#page_4_main_color_choice {
+    display: none;
+    position: absolute;
+    left: 5px;
+    top: 8%;
+    background-color: rgb(129 127 127 / 95%);
+    z-index: 10;
+    border-radius: 5px;
+    max-width: 120px;
+}
+
+#page_4_main_color_choice_container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+#page_4_secondary_color_choice {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 8%;
+    background-color: rgb(129 127 127 / 95%);
+    z-index: 10;
+    border-radius: 5px;
+    max-width: 120px;
+}
+
+#page_4_secondary_color_choice_container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.colorBoxMain {
+    border-style: solid;
+    border-width: 2px;
+    margin: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.colorBoxSecondary {
+    border-style: solid;
+    border-width: 2px;
+    margin: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.navy {
+    background-color:#000080;
+}
+
+.burgundy{
+    background-color:#800020;
+}
+
+.green{
+    background-color: #008000;
+}
+
+.dark_green{
+    background-color: #006400;
+}
+
+.olive{
+    background-color: #808000;
+}
+
+.beige{
+    background-color: #f5f5dc;
+}
+
+.red{
+    background-color: #ff0000;
+}
+
+.tan{
+    background-color: #d2b48c;
+}
+
+.camel{
+    background-color: #c19a6b;
+}
+
+.brown{
+    background-color: #a52a2a;
+}
+
+.dark_brown{
+    background-color: #654321;
+}
+
+.light_pink{
+    background-color: #ffb6c1;
+}
+
+.pink{
+    background-color: #ffc0cb;
+}
+
+.black{
+    background-color: #000000;
+}
+
+.light_gray{
+    background-color: #d3d3d3;
+}
+
+.dark_gray{
+    background-color: #a9a9a9;
+}
+
+.white{
+    background-color: #ffffff;
+}
+
+
+.khaki{
+    background-color: #c3b091;
+}
+
+.maroon{
+    background-color: #800000;
+}
+
+.light_blue{
+    background-color: #add8e6;
+}
+
+.cream{
+    background-color: #fffdd0;
+}
+
+.dark_red{
+    background-color: #8b0000;
 }
 
 
